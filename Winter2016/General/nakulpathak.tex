@@ -7,6 +7,11 @@
 \usepackage{anyfontsize}
 \usepackage{url}
 \usepackage[margin=1.77800cm ]{geometry}
+
+\setlist[2]{noitemsep}
+\setlist{nosep}
+\setlist[itemize]{leftmargin=*}
+
 \textheight=10in
 \pagestyle{empty}
 %\raggedbottom
@@ -37,6 +42,7 @@
  \textbf{#1} #2 $\bullet$ #3\\ 
 #4 \\
 }
+
 % END RESUME DEFINITIONS
 
 \begin{document}
@@ -47,14 +53,13 @@
 
 \begin{center}
 	{\Huge \scshape {Nakul Pathak}} \\
-\vspace*{6pt} 
-{\fontsize{10}{1}\selectfont University of Waterloo $\cdot$ 2A Software Engineering} \\
-\vspace{-4pt}
 \hspace*{-18pt} \hrulefill \\
 \vspace{2pt}
 \hspace*{-18pt} (226)-868-8127 $|$ n4pathak@uwaterloo.ca $|$ \urlstyle{same}\url{http://nakulpathak.com} $|$  \urlstyle{same}\url{http://github.com/nakulpathak3}
 \vspace{-5pt}
 \end{center}
+
+\vspace{7pt}
 
 \header{\normalsize Technical Skills}
 \begin{achievements}
@@ -70,9 +75,9 @@
 \header{\normalsize Work Experience}
 \begin{achievements}
 \item \textbf{Software Developer Intern, Shopify} \hfill \textit {May 2015 - August 2015}
-\\ - Used Test-Driven Development 
+\\ - Used Test-Driven Development to 
 \\ - Added new section to Partners area and developed system to allow 3rd party payment systems to automatically integrate with Shopify through Universal Offsite API. 
-\\ - Created \textit{\href{https://github.com/activemerchant/payment_icons}{Payment Icons}} open source library to render payment icons across Shopify. Currently used by over 175 3rd-party developers.
+\\ - Created \textit{\href{https://github.com/activemerchant/payment_icons}{Payment Icons}} open source library to render payment icons across Shopify.
 \\ - 
 \end{achievements}
 
@@ -81,20 +86,45 @@
 \header{\normalsize Relevant Projects}
 \begin{achievements}
 \def\UrlFont{\em}
-\item \textbf{Flash} $|$ \url{http://github.com/nakulpathak3/Flash} \hfill \textit {September 2015}
-\\ Express + node.js Shopify app to allow merchants to post deals for users
+\item \textbf{Flash} {$|$ \scriptsize HACK THE NORTH 2015, Participant}  \hfill \textit {September 2015}
+\begin{itemize}
+\item[-]Learned react-native to build an iOS \& Android app in 36 hours. 
+\item[-]Provides users with deals that last 5 minutes after opening. 1 touch payments through Braintree API
+\item[-]Node.js + Express app for Shopify app store for merchants to post deals and receive payments through Shopify API
+\end{itemize}
 \item \textbf{Payment Icons Gem} $|$ \url{http://github.com/activemerchant/payment_icons} \hfill \textit {August 2015}
-\\ Ruby on Rails engine which mounts payment icon assets and frozen record model to access those assets into any rails app.
+\begin{itemize}
+\item[-]Independently created and integrated open source gem across Shopify's codebase
+\item[-]Ruby on Rails engine which mounts payment icon assets and frozen record model to access those assets in any rails app
+\item[-]Currently used by over 175 3rd-party developers
+\end{itemize}
+\item \textbf{Inventory Notifier App}  \hfill \textit {February 2015}
+\begin{itemize}
+\item[-]Used Django to build web app which calls or texts Shopify merchants when their product inventory goes below 10 items
+\item[-]Utilized Twilio API for calls and Shopify API for inventory checks
+\end{itemize}
+\item \textbf{Library Management API}  \hfill \textit {February 2015}
+\begin{itemize}
+\item[-]Created RESTful API for managing books using Ruby on Rails \& CRUD methodology
+\item[-]Utilized best practices such as versioning, namespacing, etc.
+\end{itemize}
 \item \textbf{Blogging Service} $|$ \url{http://nakul-microblog.herokuapp.com} \hfill \textit {December 2014}
-\\ Built a blogging service using Flask and Python. Features include OAuth authentication login, user profiles, following users, writing posts, etc. Pagination, unit testing also included.
-\item \textbf{Flask and Rails APIs}  \hfill \textit {December 2014, February 2015}
-\\ Made secure, RESTful APIs using Flask and Rails for a todo list and a book management system. Versioned, namespaced.
-\item \textbf{ASCII Chan}  $|$ \url{http://nakul-asciichan.appspot.com} \hfill \textit {November 2014}
-\\ Created ASCII Art Service using Python and App Engine as part of Udacity course. Uses Google Maps API, HostIP API, App Engine Datastore. Also, includes caching to reduce requests to database. 
+\begin{itemize}
+\item[-]Built a blogging service which includes OAuth authentication login, user profiles, following users, etc. using Flask.
+\end{itemize}
+\item \textbf{To-Do List API}  \hfill \textit {December 2014}
+\begin{itemize}
+\item[-]Learned REST principles and Flask by building API for managing to-do list through HTTP requests
+\end{itemize}
 \item\textbf{MyoRunner}  {$|$ \scriptsize ENGHACK, 2nd Place $|$ }  \url{http://jhudson.ca/myorunaway/}\hfill \textit {November 2014}
-\\ Learned Lua to create temple run type browser based game controlled by Myo.
-\item \textbf{Feed Me!} {$|$ \scriptsize HACK THE NORTH, Participant}  \hfill \textit {September 2014}
-\\ Used Django and Python to create a web app which provides possible recipes to make with ingredients listed in a search by parsing an API from Yummly.
+\begin{itemize}
+\item[-]Learned Lua and Myo SDK to build Temple Run type browser based game in about 12 hours
+\item[-]Used 3D geometry to control sideways motion using wrist movement
+\end{itemize}
+\item \textbf{Feed Me!} {$|$ \scriptsize HACK THE NORTH 2014, Participant}  \hfill \textit {September 2014}
+\begin{itemize}
+\item[-]Learned Django to create a web app which provides possible recipes to make with ingredients listed in a search by parsing an API from Yummly.
+\end{itemize}
 \end{achievements}
 
 \vspace{6pt}
