@@ -76,7 +76,43 @@
 \begin{achievements}
 \item \textbf{Software Developer Intern, Shopify} \hfill \textit {May 2015 - August 2015}
 \begin{itemize}
-\item[-]Learned react-native to build an iOS \& Android app in 36 hours. 
+\item[-]Lead development of a new section in Shopify Partners area along with Product Manager to allow 3rd party payment systems to integrate with Shopify
+
+Added new section to Shopify Partners area for a new type of partner - Payment Gateway Partner. Then made changes to how Shopify handles external payment gateways so that Payment partners could automatically add their gateways without involvement of payment team. Took project from early prototype to beta phase in 2-3 months while handling other responsibilities. Full stack developer implementing both back end logic and designs, keeping in mind, the front end development guidelines. Had weekly meetings with Product manager, designer and another developer intern to keep track of progress. Lead discussions with Partners, Data and Shipping team, directly writing code for all and deploying multiple times. Followed test driven development throughout while constantly getting code reviewed and rapidly deploying revisions. Opened floodgates for multiple gateway integrations which were originally blocked due to lack of time and developers to integrate those gateways by automating the whole process. (top gun)
+Followed MVC patterns, adding models, controllers and implementing views from design specifications for this project. Edited existing code (Some of it legacy) to allow for automation of integration process.
+Constantly presented progress to multiple teams in monthly meetings and followed roadmap to achieve all features.
+
+Extracted and centralized payment icons from within Shopify and bundled them into a rails engine. Implemented frozen record model to access icons. Added Gem to Shopify's Gemfile, then changed Shopify admin, checkout and Partners to use Gem. Handled everything from readme to legal coverage to testing before open sourcing. Open sourced gem under the activemerchant organization. Deployed to rubygems.org and is currently live with over 175 users. Did all of this within 8 days (Payment icons gem)
+
+Was assigned issues on github and rapidly made pull requests to fix them. Got code reviewed and then deployed changes over and over.
+Issues ranged from hiding sensitive information from UI (backtrace issue) to fixing duplicate requests from payment gateways screwing our payments data.
+
+Completely updated how Shopify handles countries helping Shipping team, adding new categories for country grouping. Used RoR, Coffeescript, Sass, Erb throughout keeping design principles, TDD and object oriented design in mind. (countries.yml changes)
+
+fixed legacy code for security team, made changes in Shopify's tables, securing columns through encryption and removing unused columns. (Carrier services table)
+
+Found issues in rack gem, updated the gem to version which fixes the bug and deployed change to production.
+
+Wrote automated tests using Minitest and mocha for every change I made.
+
+Solely Implemented Stripe API Bump to newer version changing code across Shopify payments to accomodate for the changes, adding an entire new phase in the payments process.
+
+Read books like practical object oriented design in Ruby to improve code quality throughout co-op.
+
+Added interactive office map to LCD TVs for hackdays projects, helping employees find teams, individuals, meeting rooms. Also allowed quickly setting up meetings directly from the TV and viewing available spaces, thus helping improve collaboration across teams and projects. 
+
+Mastered ping pong, made a lot of friends, and had a lot of fun. Fucked up only like twice. Went to a lot of bars after work.
+
+Constantly acting on feedback from weekly 1:1s to the point where mentor was left with no feedback to provide.
+
+Fixed long standing issue with existing gateway integrations where payment gateways sent multiple duplicate responses doubling payments and checkouts data, by iterating over 4-5 solutions while consulting platform and data teams, finally implementing and shipping a solution which identified certain parameters which make a request unique and constructing a hash token from that. Helped data, payments and checkout team by fixing issue. Improved financial GMV calculations by 10\%.
+
+Managed time between tasks assigned by lead and by project manager while repeatedly meeting deadlines.
+
+Made over 25 pull requests adding over 2000 lines of code, removing 500 and editing about 700 lines.
+
+Basically was a machine throughout the summer, making change after change, improving shopify for everyone.
+
 \item[-]Provides users with deals that last 5 minutes after opening. 1 touch payments through Braintree API
 \item[-]Node.js + Express app for Shopify app store for merchants to post deals and receive payments through Shopify API
 \end{itemize}
