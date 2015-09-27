@@ -25,7 +25,7 @@
 \newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
 \newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
 \newcommand{\address}{\vspace*{-8pt} \\ \hspace*{-18pt}  \\}
-\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder }
 \newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
 \newcommand{\contact}[3]{
 \vspace*{-8pt}
@@ -62,9 +62,9 @@
 \vspace{-5pt}
 \end{center}
 
-\vspace{7pt}
+\vspace{8pt}
 
-\header{\normalsize Technical Skills}
+\header{\fontsize{11}{12}\selectfont Technical Skills}
 \begin{achievements}
 \item \textbf{Languages}: Ruby, Python, Javascript, C++, C
 \item \textbf{Frameworks}: Ruby on Rails, Flask, Django, Node.js, React Native, jQuery, Bootstrap
@@ -73,9 +73,9 @@
 \item \textbf{Miscellaneous}: HTTP requests, RESTful API development, Unix based systems, Algorithms \& design patterns
 \end{achievements}
 
-\vspace{6pt}
+\vspace{8pt}
 
-\header{\normalsize Work Experience}
+\header{\fontsize{11}{12}\selectfont  Work Experience}
 \begin{achievements}
 \item \textbf{Developer Intern, Payments team, Shopify} \hfill \textit {May 2015 - August 2015}
 \begin{itemize}[leftmargin=0cm]
@@ -86,34 +86,31 @@
 \end{itemize}
 \end{achievements}
 
-\vspace{6pt}
+\vspace{8pt}
 
-\header{\normalsize Relevant Projects}
+\header{\fontsize{11}{12}\selectfont Relevant Projects}
 \begin{achievements}
 \def\UrlFont{\em}
 \item \textbf{Flash} {$|$ \scriptsize HACK THE NORTH 2015, Participant}  \hfill \textit {September 2015}
 \begin{itemize}
-\item[-]Learned react-native to build an iOS \& Android app in 36 hours. 
-\item[-]Provides users with deals that last 5 minutes after opening. 1 touch payments through Braintree API
-\item[-]Node.js + Express app for Shopify app store for merchants to post deals and receive payments through Shopify API
+\item[-]Learned react-native to build an iOS app which provides users with deals that last 5 minutes after opening.
+\item[-]Currently building node.js + express app for Shopify app store for merchants to post deals and receive payments through Shopify API.
 \end{itemize}
 \vspace{2pt}
 \item \textbf{Payment Icons Gem} $|$ \url{http://github.com/activemerchant/payment_icons} \hfill \textit {August 2015}
 \begin{itemize}
-\item[-]Extracted Shopify's payment icons into an open-source gem. Changed Shopify Admin, Checkout and Partners to use the gem.
-\item[-]Ruby on Rails engine which mounts payment icon assets and frozen record model to access those assets in any rails app
-\item[-]Currently used by over 175 3rd-party developers
+\item[-]Extracted Shopify's payment icons into an open-source gem currently used by over 175 3rd-party developers.
+\item[-]Ruby on Rails engine which mounts payment icon assets and frozen record model to access those assets in any rails app.
 \end{itemize}
 \vspace{2pt}
 \item \textbf{Inventory Notifier App}  \hfill \textit {February 2015}
 \begin{itemize}
-\item[-]Used Django to build web app which calls or texts Shopify merchants when their product inventory goes below 10 items
-\item[-]Utilized Twilio API for calls and Shopify API for inventory checks
+\item[-]Used Django to build web app which calls or texts Shopify merchants, using Twilio API, when their product inventory goes below 10 items.
 \end{itemize}
 \vspace{2pt}
 \item \textbf{Library Management API}  \hfill \textit {February 2015}
 \begin{itemize}
-\item[-]Created RESTful API for managing books using Ruby on Rails \& CRUD methodology
+\item[-]Created RESTful API for managing books using Ruby on Rails \& CRUD methodology.
 \item[-]Utilized best practices such as versioning, namespacing, etc.
 \end{itemize}
 \vspace{2pt}
@@ -124,13 +121,13 @@
 \vspace{2pt}
 \item \textbf{To-Do List API}  \hfill \textit {December 2014}
 \begin{itemize}
-\item[-]Learned REST principles and Flask by building API for managing to-do list through HTTP requests
+\item[-]Learned REST principles and Flask by building API for managing to-do list through HTTP requests.
 \end{itemize}
 \vspace{2pt}
 \item\textbf{MyoRunner}  {$|$ \scriptsize ENGHACK, 2nd Place $|$ }  \url{http://jhudson.ca/myorunaway/}\hfill \textit {November 2014}
 \begin{itemize}
-\item[-]Learned Lua and Myo SDK to build Temple Run type browser based game in about 12 hours
-\item[-]Used 3D geometry to control sideways motion through arm rotation
+\item[-]Learned Lua and Myo SDK to build arm gestures controlled Temple Run type browser based game in about 12 hours.
+\item[-]Used 3D geometry to control sideways motion of game character through arm rotation.
 \end{itemize}
 \vspace{2pt}
 \item \textbf{Feed Me!} {$|$ \scriptsize HACK THE NORTH 2014, Participant}  \hfill \textit {September 2014}
@@ -139,9 +136,9 @@
 \end{itemize}
 \end{achievements}
 
-\vspace{6pt}
+\vspace{8pt}
 
-\header{\normalsize Extracurricular Activities \& Achievements}
+\header{\fontsize{11}{12}\selectfont Extracurricular Activities \& Achievements}
 \begin{achievements}
 \item \textbf{Software Engineering Orientation Leader} \hfill \textit {September 2015}
 \\ Leader of Light Red orientation group. Set up events, guided students across different events, answered questions about university life and made a lot of friends!
@@ -150,7 +147,7 @@
 \item \textbf{HH Internships/Co-op Group Creator and Admin} \hfill \textit {November 2014- Current}
 \\ Created group for students to match up with startups/big companies/other students for internships \& to help each other with academics, resumes, advice, etc. Over 1100 members now.
 \item \textbf{Standardized Tests} \hfill \textit {December 2013}
-\\ SAT - 2360 (99th percentile), SAT Math Level II - 780, TOEFL - 113
+\\ SAT - 2360 (99th percentile), SAT Math Level II - 780, TOEFL - 113.
 \end{achievements}
 
 \end{document}
