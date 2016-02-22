@@ -7,7 +7,13 @@
 \usepackage{fontawesome}
 \usepackage{anyfontsize}
 \usepackage{url}
-\usepackage[margin=1.4cm ]{geometry}
+\usepackage{geometry}
+\geometry{
+left=13mm,
+right=13mm,
+top=19mm,
+bottom=19mm,
+}
 
 \setlist[2]{noitemsep}
 \setlist{nosep}
@@ -55,38 +61,34 @@
 \begin{center}
 	{\Huge \scshape {Nakul Pathak}} \\
 	\vspace*{6pt} 
-{\fontsize{10}{1}\selectfont University of Waterloo $\cdot$ Software Engineering} \\
+{\fontsize{10}{1}\selectfont University of Waterloo $\cdot$ 2B Software Engineering} \\
 \vspace{-4pt}
 \hspace*{-18pt} \hrulefill \\
 \vspace{2pt}
-\hspace*{-18pt} (226)-868-8127 $|$ n4pathak@uwaterloo.ca $|$ \urlstyle{same}\url{http://nakulpathak.com} $|$  \urlstyle{same}\url{http://github.com/nakulpathak3}
+\hspace*{-18pt} (226)-868-8127 $|$ n4pathak@uwaterloo.ca $|$ \urlstyle{same}\url{http://nakulpathak.com} $|$  \urlstyle{same}\url{https://github.com/nakulpathak3}
 \vspace{-5pt}
 \end{center}
 
 \vspace{8pt}
 
-\header{\fontsize{11}{12}\selectfont Technical Skills}
-\begin{achievements}
-\item \textbf{Languages}: Ruby, Python, Javascript, C++, C, HTML, CSS.
-\item \textbf{Frameworks}: Ruby on Rails, Flask, Django, Node.js, React Native, jQuery, Bootstrap.
-\item \textbf{Tools}: Git, Bash.
-\item \textbf{Databases}: MySQL, PostgreSQL, SQLite, SQLAlchemy (ORM).
-\item \textbf{Miscellaneous}: RESTful API development, Unix based systems, Algorithms \& design patterns.
-\end{achievements}
-
-\vspace{8pt}
-
 \header{\fontsize{11}{12}\selectfont  Work Experience}
 \begin{achievements}
+\item \textbf{Developer Operations Intern, Oracle} \hfill \textit {January 2016 - Current}
+\begin{itemize}
+\item[-]Write bash, shell and ruby scripts to automate tasks through Teamcity configurations and Rundeck.
+\vspace{2pt}
+\item[-]Using Chef and Docker to add and change system settings across all servers part of the network in efforts to improve developer efficiency.
+\vspace{2pt}
+\item[-]Implement application metrics gathering through Grafana, Carbon, Influxdb and Sensu.
+\end{itemize}
+\vspace{2pt}
 \item \textbf{Developer Intern, Payments Team, Shopify} \hfill \textit {May 2015 - August 2015}
 \begin{itemize}
-\item[-]Added over 20 third party payment system integrations by automating addition of these systems to Shopify. Led project from early prototype to beta phase through test-driven full-stack web development work.
+\item[-]Added over 50 third party payment system integrations by automating addition of these systems to Shopify. Led project from early prototype to beta phase through test-driven full-stack web development work.
 \vspace{2pt}
 \item[-]Improved financial GMV calculations by 10\% by fixing long-standing issue where payment gateways sent duplicate responses, doubling total amount of transactions. 
 \vspace{2pt}
 \item[-]Independently created, open-sourced, and integrated Payment Icons ruby gem across Shopify's codebase, providing a simple and uniform way of adding these icons into any Rails app.
-\vspace{2pt}
-\item[-]Deployed Shopify's codebase to production over 15 times and made over 30 pull requests, helping various teams including data, shipping, and security.
 \end{itemize}
 \end{achievements}
 
@@ -95,16 +97,32 @@
 \header{\fontsize{11}{12}\selectfont Relevant Projects}
 \begin{achievements}
 \def\UrlFont{\em}
+\item \textbf{One Press Man} {$|$ \scriptsize UofT HACKS 2016, 2nd Best Overall} $|$  \href{https://github.com/adrianmachado/Onepressman}{\faGithub} \hfill \textit {January 2016}
+\begin{itemize}
+\item[-]Application that uses the Pebble watch's controls as a discrete, quick panic button to message preselected contacts and 911 in emergency situations.
+\vspace{2pt}
+\item[-]Implemented the Pebble application in C to build screens and communicate with companion Android application when triggered.
+\end{itemize}
+\vspace{2pt}
+\def\UrlFont{\em}
 \item \textbf{Flash} {$|$ \scriptsize HACK THE NORTH 2015, Participant} $|$  \href{https://github.com/nakulpathak3/Flash}{\faGithub} \hfill \textit {September 2015}
 \begin{itemize}
 \item[-]Implemented an iOS application that provides users with deals which expire 5 minutes after opening.
+\vspace{2pt}
 \item[-]Currently building a Node.js + Express application that allows Shopify merchants to post deals and receive payments.
 \end{itemize}
 \vspace{2pt}
-\item \textbf{Payment Icons Gem} $|$  \href{https://github.com/activemerchant/payment_icons}{\faGithub} \hfill \textit {August 2015}
+\item \textbf{Payment Icons Gem} {$|$ \scriptsize Open Source Contribution} $|$  \href{https://github.com/activemerchant/payment_icons}{\faGithub} $|$ \href{https://rubygems.org/gems/payment_icons/versions/0.0.1}{\faExternalLink} \hfill \textit {August 2015}
 \begin{itemize}
-\item[-]Extracted Shopify's payment icons into an open-source gem currently used by over 175 3rd-party developers.
-\item[-]Ruby on Rails engine, which mounts payment icon assets and frozen record model to access those assets, into any rails app.
+\item[-]Extracted Shopify's payment icons into an open-source gem currently used by over 250 3rd-party developers.
+\vspace{2pt}
+\item[-]Ruby on Rails engine which mounts payment icon assets and frozen record model to access those assets into any rails app.
+\end{itemize}
+\item \textbf{Blogging Engine}  $|$  \href{https://github.com/nakulpathak3/blorgh-engine-gem}{\faGithub} \hfill \textit {July 2015}
+\begin{itemize}
+\item[-] Developed a mountable Ruby on Rails Engine which adds a blogging service to any Rails app if added as a gem.
+\vspace{2pt}
+\item[-] Also created demo app that uses this engine - \href{https://github.com/nakulpathak3/app-to-use-blorgh-gem}{\faGithub}
 \end{itemize}
 \vspace{2pt}
 \item \textbf{Inventory Notifier App} $|$  \href{https://github.com/nakulpathak3/twilio-shopify-notifier}{\faGithub} \hfill \textit {February 2015}
@@ -112,23 +130,19 @@
 \item[-]Used Django and Twilio API to build web application that calls or texts Shopify merchants when their product inventory goes below 10 items.
 \end{itemize}
 \vspace{2pt}
-\item \textbf{Library Management API} $|$  \href{https://github.com/nakulpathak3/books-api-rails}{\faGithub}  \hfill \textit {February 2015}
+\item \textbf{Reading List API} $|$  \href{https://github.com/nakulpathak3/books-api-rails}{\faGithub}  \hfill \textit {February 2015}
 \begin{itemize}
-\item[-]Created RESTful API for managing books using Ruby on Rails \& CRUD methodology.
+\item[-]Created RESTful API for managing a reading list using Ruby on Rails \& CRUD methodology.
+\vspace{2pt}
 \item[-]Utilized best practices such as versioning, namespacing, etc.
 \end{itemize}
 \vspace{2pt}
-\item \textbf{Blogging Service} $|$  \href{https://github.com/nakulpathak3/flask-tutorial}{\faGithub} \hfill \textit {December 2014}
+\item \textbf{Blogging Service} $|$  \href{https://github.com/nakulpathak3/complete-microblog-flask}{\faGithub}  $|$ \href{http://nakul-microblog.herokuapp.com/}{\faExternalLink}  \hfill \textit {December 2014}
 \begin{itemize}
 \item[-]Built a blogging service which includes OAuth authentication login, user profiles, following users, etc. using Flask.
 \end{itemize}
 \vspace{2pt}
-\item \textbf{To-Do List API} $|$  \href{https://github.com/nakulpathak3/flask-rest-api}{\faGithub} \hfill \textit {December 2014}
-\begin{itemize}
-\item[-]Learned REST principles and Flask by building API for managing to-do list through HTTP requests.
-\end{itemize}
-\vspace{2pt}
-\item\textbf{MyoRunner} {$|$ \scriptsize ENGHACK, 2nd Place }  $|$  \href{https://github.com/nakulpathak3/myorunner}{\faGithub} \hfill \textit {November 2014}
+\item\textbf{MyoRunner} {$|$ \scriptsize ENGHACK, 2nd Place }  $|$  \href{https://github.com/nakulpathak3/myorunner}{\faGithub} $|$ \href{http://jhudson.ca/myorunaway}{\faExternalLink}\hfill \textit {November 2014}
 \begin{itemize}
 \item[-]Developed arm gesture controlled Temple Run type browser-based game using Lua and Myo SDK.
 \end{itemize}
@@ -136,6 +150,10 @@
 \item \textbf{Feed Me!} {$|$ \scriptsize HACK THE NORTH 2014, Participant}   $|$  \href{https://github.com/nakulpathak3/FeedMe}{\faGithub} \hfill \textit {September 2014}
 \begin{itemize}
 \item[-]Created a Django web application which provides possible cooking recipes by parsing ingredients listed in a search across an API from Yummly.
+\end{itemize}
+\item \textbf{Pick The Odd Image Out} $|$  \href{https://github.com/nakulpathak3/pick-odd-image-out}{\faGithub} $|$ \href{http://picktheoddimageout.bitballoon.com}{\faExternalLink}  \hfill \textit {August 2014}
+\begin{itemize}
+\item[-] Built a web based game using AngularJS where the user picks which image out of three is the odd one out. 
 \end{itemize}
 \end{achievements}
 
@@ -151,16 +169,6 @@
 \item \textbf{Engineering Ambassador, University of Waterloo} \hfill \textit {September 2014- Current}
 \begin{itemize}
 \item[-] Represented University of Waterloo by creating online portfolio. Actively participated in events like move-ins, shadow days.
-\end{itemize}
-\vspace{2pt}
-\item \textbf{HH Internships/Co-op Group Creator and Admin} \hfill \textit {November 2014- Current}
-\begin{itemize}
-\item[-]Created a group, with over 1100 members, for students to match up with companies for internships \& to help each other with academics, resumes, advice, etc.
-\end{itemize}
-\vspace{2pt}
-\item \textbf{Standardized Tests} \hfill \textit {December 2013}
-\begin{itemize}
-\item[-]SAT - 2360 (99th percentile), SAT Math Level II - 780, TOEFL - 113.
 \end{itemize}
 \end{achievements}
 
