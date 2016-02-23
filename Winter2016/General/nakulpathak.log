@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.5.25)  25 JAN 2016 19:32
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.5.25)  22 FEB 2016 21:59
  restricted \write18 enabled.
  file:line:error style messages enabled.
 **nakulpathak.tex
@@ -1016,13 +1016,13 @@ Here is how much of LuaTeX's memory you used:
  369 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 2 kern, 5 attribute, 46 glue_spec, 5 attrib
 ute_list, 1 write nodes
-   avail lists: 1:1,2:11312,3:244,4:1774,5:310,6:3631,7:48,8:21,9:172,10:342
+   avail lists: 1:1,2:11176,3:243,4:1764,5:312,6:3580,7:48,8:21,9:171,10:338
  23170 multiletter control sequences out of 65536+600000
  61 fonts using 4282951 bytes
  55i,4n,39p,377b,328s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/fontawesome/FontAwesom
-e.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman7-regu
-lar.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman9-it
+</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.ot
+f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/fontawesome/FontAwes
+ome.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman9-it
 alic.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman9-b
 old.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman9-re
 gular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10
@@ -1030,7 +1030,7 @@ gular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman10
 ncaps10-regular.otf><</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb><</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy9.pfb>
-Output written on nakulpathak.pdf (1 page, 55809 bytes).
+Output written on nakulpathak.pdf (1 page, 55548 bytes).
 
 PDF statistics: 88 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
