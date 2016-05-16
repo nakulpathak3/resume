@@ -1,9 +1,10 @@
-\documentclass[10pt]{article}
+\documentclass[11pt]{article}
 \usepackage{enumitem}
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{hyperref}
+\usepackage{fontspec}
 \usepackage{fontawesome}
 \usepackage{anyfontsize}
 \usepackage{url}
@@ -11,8 +12,8 @@
 \geometry{
 left=13mm,
 right=13mm,
-top=19mm,
-bottom=19mm,
+top=13mm,
+bottom=16mm,
 }
 
 \setlist[2]{noitemsep}
@@ -59,116 +60,146 @@ bottom=19mm,
 \vspace*{-45pt}
 
 \begin{center}
-  {\Huge \scshape {Nakul Pathak}} \\
-  \vspace*{6pt} 
-{\fontsize{10}{1}\selectfont University of Waterloo $\cdot$ Software Engineering} \\
+	{\Huge \scshape {Nakul Pathak}} \\
+	\vspace*{6pt} 
+{\fontsize{10}{1}\selectfont University of Waterloo $\cdot$ 2B Software Engineering} \\
 \vspace{-4pt}
 \hspace*{-18pt} \hrulefill \\
 \vspace{2pt}
-\hspace*{-18pt} (226)-868-8127 $|$ n4pathak@uwaterloo.ca $|$ \urlstyle{same}\url{http://nakulpathak.com} $|$  \urlstyle{same}\url{https://github.com/nakulpathak3}
+\hspace*{-13pt} \faPhone \  +1(226)-868-8127 \ $|$ \  \href{mailto:n4pathak@uwaterloo.ca}{\faEnvelope \ n4pathak@uwaterloo.ca} \  $|$ \  \href{http://nakulpathak.com}{\faGlobe \ nakulpathak.com}  \ $|$ \   \href{https://github.com/nakulpathak3}{\faGithub \ nakulpathak3}
 \vspace{-5pt}
 \end{center}
 
+\vspace{2pt}
 
-\vspace{10pt}
-
-\header{\fontsize{11}{12}\selectfont  Work Experience}
+\header{\fontsize{11.1}{10}\selectfont Skills}
 \begin{achievements}
-\item \textbf{Developer Operations Intern, Oracle} \hfill \textit {January 2016 - Current}
+\item[-] \textbf{Languages}: Ruby, Javascript, Python, C++, C, SQL, Bash.
+\vspace{1pt}
+\item[-] \textbf{Frameworks}: Ruby on Rails, Flask, Django, NodeJS.
+\vspace{1pt}
+\item[-] \textbf{Tools:} *nix, Vagrant, Docker, Chef, Nginx, Sensu, Elasticsearch, Apache Mesos, Kubernetes.
+\end{achievements}
+
+\vspace{4pt}
+
+\header{\fontsize{11.1}{10}\selectfont Work}
+\begin{achievements}
+\item \textbf{{\fontsize{9.5}{10}\selectfont  Developer Operations Co-op, Oracle Eloqua}} \hfill \textit {January 2016 - April 2016}
 \begin{itemize}
-\item[-]Write bash, shell and ruby scripts to automate tasks through Teamcity configurations.
+\item[-]Decreased time required to set up TeamCity agents from 4 hours/machine to \textbf{1.5 hours/machine} by automating the set up process through Chef, Bash scripts \& Rake tasks.
 \vspace{2pt}
-\item[-]Edit Chef cookbooks to change system settings or add/migrate software across multiple servers.
+\item[-]Added health checks to \textbf{Elasticsearch nodes} through Sensu for dark launch of one of Eloqua's products.
 \vspace{2pt}
-\item[-]Automate creation, bootstrapping and removal of machines in the Eloqua network.
+\item[-]Reduced quarterly maintenance time from a few hours to \textbf{5 minutes} by creating Bash scripts interacting with Chef (Knife), Apache, \textbf{Sensu}, Grafana, etc. to shutdown and start up services across over 20 virtual machines.
 \vspace{2pt}
-\item[-]Provide metrics for and add health checks to various Elasticsearch nodes using Sensu monitoring.
+\item[-]Set up an \textbf{internal gem server} by creating a Docker container using Geminabox that was deployed using Apache Mesos.
 \end{itemize}
-\vspace{5pt}
-\item \textbf{Developer Intern, Payments Team, Shopify} \hfill \textit {May 2015 - August 2015}
+\vspace{4pt}
+\item \textbf{{\fontsize{9.5}{10}\selectfont Software Developer Co-op, Payments Team, Shopify}} \hfill \textit {May 2015 - August 2015}
 \begin{itemize}
-\item[-]Added over 50 third party payment system integrations by automating addition of these systems to Shopify. Led project from early prototype to beta phase through test-driven full-stack web development work.
+\item[-]Added over \textbf{80} third party payment system integrations by automating addition of these systems to Shopify. Led project from early prototype to beta phase through test-driven full-stack web development work.
 \vspace{2pt}
-\item[-]Improved financial GMV calculations by 10\% by fixing long-standing issue where payment gateways sent duplicate responses, doubling total amount of transactions. 
+\item[-]Improved financial GMV calculations by \textbf{10\%} by fixing a long-standing issue where payment gateways sent duplicate responses, doubling the total amount of transactions. 
 \vspace{2pt}
-\item[-]Independently created, open-sourced, and integrated Payment Icons ruby gem across Shopify's codebase, providing a simple and uniform way of adding these icons into any Rails app.
+\item[-]Created and integrated \href{https://github.com/activemerchant/payment_icons}{Payment Icons} ruby gem across Shopify's codebase, providing a simple and uniform way of adding payment icons into any Rails app. Open source \href{https://github.com/activemerchant/payment_icons}{\textit{here}}.
 \end{itemize}
 \end{achievements}
 
-\vspace{10pt}
+\vspace{4pt}
 
-\header{\fontsize{11}{12}\selectfont Relevant Projects}
+\header{\fontsize{11.1}{10}\selectfont Projects}
 \begin{achievements}
 \def\UrlFont{\em}
-\item \textbf{Personal Blog Gem}  $|$  \href{https://github.com/nakulpathak3/personal-blog-gem}{\faGithub}   $|$  \href{http://nakulpathak.com/blog}{\faExternalLink}  $|$  \href{http://rubygems.org/gems/personal_blog}{\faDiamond} \hfill \textit {February 2016}
+\item \textbf{Personal Blog Gem}  $|$  \href{https://github.com/nakulpathak3/personal-blog-gem}{\faGithub}  $|$ \href{http://nakulpathak.com/blog}{\faExternalLink} \hfill \textit {February 2016}
 \begin{itemize}
-\item[-]Mountable Ruby on Rails engine that adds a markdown-supporting personal blog to any Ruby on Rails application.
+\item[-]Ruby gem that adds a responsive and completely customizable personal blog with markdown support and code syntax highlighting to any Ruby on Rails application.
 \vspace{2pt}
-\item[-]Responsive layout with no user model and admin access provided through environment variables.
+\item[-]Downloaded over \textbf{720} times since March 17, 2016.
 \vspace{2pt}
-\item[-]Downloaded over 550 times since it's launch on March 17, 2016.
+\item[-]\textbf{Tools:} Ruby on Rails Engines, HTML, CSS, Javascript.
 \end{itemize}
-\vspace{5pt}
-\item \textbf{One Press Man} {$|$ \scriptsize UofT HACKS 2016, 2nd Best Overall} $|$  \href{https://github.com/adrianmachado/Onepressman}{\faGithub} \hfill \textit {January 2016}
+
+\vspace{3pt}
+
+\item \textbf{One Press Man} {$|$ \scriptsize UofT HACKS 2016, \textbf{2nd Place}} $|$  \href{https://github.com/adrianmachado/Onepressman}{\faGithub} \hfill \textit {January 2016}
 \begin{itemize}
 \item[-]Application that uses the Pebble watch's controls as a discrete, quick panic button to message preselected contacts and 911 in emergency situations.
 \vspace{2pt}
-\item[-]Implemented the Pebble application in C to build screens and communicate with companion Android application when triggered.
+\item[-]\textbf{Tools:} C, Pebble SDK, Java.
 \end{itemize}
-\vspace{5pt}
-\item \textbf{Payment Icons Gem} {$|$ \scriptsize Open Source Contribution} $|$  \href{https://github.com/activemerchant/payment_icons}{\faGithub} $|$ \href{http://rubygems.org/gems/payment_icons}{\faDiamond} \hfill \textit {August 2015}
+
+\vspace{3pt}
+
+\item\textbf{MyoRunner} {$|$ \scriptsize ENGHACK, \textbf{2nd Place} }  $|$  \href{https://github.com/nakulpathak3/myorunner}{\faGithub} $|$ \href{http://jhudson.ca/myorunaway}{\faExternalLink} \hfill \textit {November 2014}
 \begin{itemize}
-\item[-]Extracted Shopify's payment icons into an open-source gem currently used by over 600 3rd-party developers.
+\item[-]Arm gesture controlled Temple Run type browser-based game.
 \vspace{2pt}
-\item[-]Ruby on Rails engine which mounts payment icon assets and frozen record model to access those assets into any rails app.
+\item[-]\textbf{Tools:} Lua and Myo SDK.
 \end{itemize}
-\vspace{5pt}
-\item \textbf{Inventory Notifier App} $|$  \href{https://github.com/nakulpathak3/twilio-shopify-notifier}{\faGithub} \hfill \textit {February 2015}
+
+%\vspace{3pt}
+
+%\item \textbf{Payment Icons Gem} {$|$ \scriptsize Open Source Contribution} $|$  \href{https://github.com/activemerchant/payment_icons}{\faGithub} \hfill \textit {August 2015}
+%\begin{itemize}
+%\item[-]Open source Ruby gem extracted from Shopify's code base to render various payment icons like Visa, Mastercard, etc. into any Rails application.
+%\vspace{2pt}
+%\item[-]Downloaded over \textbf{640} times since its release.
+%\vspace{2pt}
+%\item[-]\textbf{Tools:} Ruby on Rails Engines, HTML, CSS, Javascript.
+%\end{itemize}
+
+\vspace{3pt}
+
+% DO I leave this in or the other one?
+\item \textbf{Flash} {$|$ \scriptsize HACK THE NORTH 2015, Participant} $|$  \href{https://github.com/nakulpathak3/Flash}{\faGithub} \hfill \textit {September 2015}
 \begin{itemize}
-\item[-]Used Django and Twilio API to build web application that calls or texts Shopify merchants when their product inventory goes below 10 items.
+\item[-]Implemented an iOS application that provides users with shopping deals which expire 5 minutes after you open them.
+\vspace{2pt}
+\item[-]\textbf{Tools:} React Native, Braintree API, XCode.
 \end{itemize}
-\vspace{5pt}
-\item \textbf{Blogging Service} $|$  \href{https://github.com/nakulpathak3/complete-microblog-flask}{\faGithub}  $|$ \href{http://nakul-microblog.herokuapp.com/}{\faExternalLink}  \hfill \textit {December 2014}
-\begin{itemize}
-\item[-]Built a blogging service which includes OAuth authentication login, user profiles, following users, etc. using Flask.
-\end{itemize}
-\vspace{5pt}
-\item\textbf{MyoRunner} {$|$ \scriptsize ENGHACK, 2nd Best Overall }  $|$  \href{https://github.com/nakulpathak3/myorunner}{\faGithub} $|$ \href{http://jhudson.ca/myorunaway}{\faExternalLink}\hfill \textit {November 2014}
-\begin{itemize}
-\item[-]Developed arm gesture controlled Temple Run type browser-based game using Lua and Myo SDK.
-\end{itemize}
-\vspace{5pt}
-\item \textbf{Feed Me!} {$|$ \scriptsize HACK THE NORTH 2014, Participant}   $|$  \href{https://github.com/nakulpathak3/FeedMe}{\faGithub}   $|$  \href{http://nakul-feedme.herokuapp.com/}{\faExternalLink}\hfill \textit {September 2014}
-\begin{itemize}
-\item[-]Created a Django web application which provides possible cooking recipes by parsing ingredients listed in a search across an API from Yummly.
-\end{itemize}
+
+%\vspace{4pt}
+
+%\item \textbf{Inventory Notifier App} $|$  \href{https://github.com/nakulpathak3/twilio-shopify-notifier}{\faGithub}
+%\begin{itemize}
+%\item[-]Web application that calls or texts Shopify merchants when their product inventory goes below 10 items.
+%\item[-]\textbf{Tools:} Django (Python), Shopify API (for checking inventory), Twilio API (for calling/texting).
+%\end{itemize}
+
+%\vspace{3pt}
+
+%\item \textbf{Feed Me!} {$|$ \scriptsize HACK THE NORTH 2014, Participant}   $|$  \href{https://github.com/nakulpathak3/FeedMe}{\faGithub} \hfill \textit {September 2014}
+%\begin{itemize}
+%\item[-]Web application which provides possible cooking recipes depending on ingredients searched for. 
+%\vspace{3pt}
+%\item[-]\textbf{Tools:} Django (Python), Yummly API (for recipes).
+%\end{itemize}
 \end{achievements}
 
-\vspace{10pt}
+\vspace{4pt}
 
-\header{\fontsize{11}{12}\selectfont  Education}
+\header{\fontsize{11.1}{10}\selectfont  Education}
 \begin{achievements}
 \item \textbf{Bachelor of Software Engineering, University of Waterloo} \hfill \textit {September 2014 - August 2019}
 \begin{itemize}
 \vspace{2pt}
-\item[-]Received President’s Scholarship of Distinction for having admission average over 95\%.
+\item[-]Received President's Scholarship of Distinction for having admission average over 95\%.
 \vspace{2pt}
 \end{itemize}
 \end{achievements}
 
-\vspace{10pt}
+\vspace{4pt}
 
-\header{\fontsize{11}{12}\selectfont Extracurricular Activities \& Achievements}
+\header{\fontsize{11.1}{10}\selectfont Miscellaneous}
 \begin{achievements}
 \item \textbf{Software Engineering Orientation Leader} \hfill \textit {September 2015}
 \begin{itemize}
 \item[-] Led orientation group throughout week, set up events, guided students across different events, and answered questions about university life.
 \end{itemize}
 \vspace{2pt}
-\item \textbf{Engineering Ambassador, University of Waterloo} \hfill \textit {September 2014- Current}
-\begin{itemize}
-\item[-] Represented University of Waterloo by creating online portfolio. Actively participated in events like move-ins, shadow days.
-\end{itemize}
+\item \textbf{Interests} - Soccer, cute coffee shops, beer, psychology, salsa (the dance \textit{and} the dip).
+\vspace{2pt}
 \end{achievements}
 
 \end{document}
